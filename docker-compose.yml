@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  n8n:
+    build: .
+    ports:
+      - "5678:3000"
+    environment:
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=3000
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=youtube_automation_2025
+      - GENERIC_TIMEZONE=Asia/Jakarta
+      - WEBHOOK_URL=http://localhost:5678
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./temp:/tmp
+
+volumes:
+  n8n_data:
