@@ -1,0 +1,24 @@
+{
+  "name": "n8n-youtube-automation",
+  "version": "1.0.0",
+  "description": "Automated YouTube content creation with n8n",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "sharp": "^0.32.6"
+  },
+  "keywords": [
+    "n8n",
+    "automation", 
+    "youtube",
+    "espeak",
+    "ffmpeg"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
